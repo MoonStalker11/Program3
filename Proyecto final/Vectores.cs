@@ -30,7 +30,7 @@ namespace Practico
             return numero % 2 == 0;
         }
 
-//-----------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 
         public void ejercicio2(params int[] arr)
         {
@@ -95,7 +95,7 @@ namespace Practico
             Console.WriteLine();
         }
 
-//-----------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
         public void ejercicio3(params int[] arr)
         {
             int[] sortedArray = InsertionSort(arr);
@@ -130,7 +130,7 @@ namespace Practico
             Console.WriteLine();
         }
 
-//-----------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 
         public void ejercicio4(params int[] arr)
         {
@@ -169,22 +169,42 @@ namespace Practico
             Console.WriteLine();
         }
 
-//-----------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------
 
         public void ejercicio5(params int[] arr)
         {
             Console.WriteLine("Vector original:");
-            MostrarVector4(arr);
+            MostrarVector(arr);
 
             Console.Write("Invertir v: ");
-            string[] valores = Console.ReadLine().Split(',');
-            int x = int.Parse(valores[0].Trim());
-            int y = int.Parse(valores[1].Trim());
+            string input = Console.ReadLine();
+            if (input != null)
+            {
+                string[] valores = input.Split(',');
+                if (valores.Length >= 2)
+                {
+                    int x, y;
+                    if (int.TryParse(valores[0].Trim(), out x) && int.TryParse(valores[1].Trim(), out y))
+                    {
+                        int[] resultado = InvertirParte(arr, x, y);
 
-            int[] resultado = InvertirParte(arr, x, y);
-
-            Console.WriteLine("Vector con parte invertida desde la posición " + x + " hasta la posición " + y + ":");
-            MostrarVector4(resultado);
+                        Console.WriteLine("Vector con parte invertida desde la posición " + x + " hasta la posición " + y + ":");
+                        MostrarVector(resultado);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Entrada no válida. Por favor, ingrese dos números separados por coma.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Entrada no válida. Por favor, ingrese dos números separados por coma.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Entrada no válida. La entrada no puede ser nula.");
+            }
         }
 
         private int[] InvertirParte(int[] arr, int x, int y)
@@ -210,7 +230,7 @@ namespace Practico
             return resultado;
         }
 
-        private void MostrarVector4(int[] arr)
+        private void MostrarVector(int[] arr)
         {
             foreach (int num in arr)
             {
@@ -218,7 +238,6 @@ namespace Practico
             }
             Console.WriteLine();
         }
-
 
 
 

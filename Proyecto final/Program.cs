@@ -4,8 +4,8 @@
         public static void Main(string[] args)
         {
         //----------------------------------------------a) Numeros------------------------------------------------------------------
-            /*Numeros a = new Numeros();
-            a.ejercicio1(35267);*/
+            Numeros a = new Numeros();
+            a.ejercicio1(35267);
 
             /*Numeros b = new Numeros();
             b.ejercicio2(35267);*/
@@ -36,7 +36,10 @@
             b.ejercicio2("Buenas tardes");*/
 
             /*Cadenas c = new Cadenas();
-            c.ejercicio4("Esta es una prueba mas");*/
+            c.ejercicio3("Esta es una prueba mas");*/
+
+            /*Cadenas d = new Cadenas();
+            d.ejercicio4("Esta es una prueba mas");*/
 
             /*Cadenas e = new Cadenas();
             e.ejercicio5("Esta es una prueba mas");*/
@@ -54,8 +57,8 @@
             /*Vectores d = new Vectores();
             d.ejercicio4(2, 5, 65, 23, 45, 2, 13, 45, 61);*/
 
-            Vectores e = new Vectores();
-            e.ejercicio5(2, 5, 65, 23, 45, 2, 13, 45);
+            /*Vectores e = new Vectores();
+            e.ejercicio5(2, 5, 65, 23, 45, 2, 13, 45);*/
         }
     }
 }

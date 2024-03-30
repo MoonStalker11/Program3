@@ -32,6 +32,7 @@ namespace Practico
             Console.WriteLine("Posicion " + posicion + " => " + resultado + " de la serie Fibonacci");
         }
 
+//-----------------------------------------------------------------------------------------------------------------------------
         public void GenerarSerie1(int cantidadTerminos, int enesimoTermino)
         {
             if (cantidadTerminos <= 0)
@@ -60,6 +61,7 @@ namespace Practico
             Console.WriteLine($"El enésimo término solicitado (en la posición {enesimoTermino}) es: {enesimo}");
         }
 
+//-----------------------------------------------------------------------------------------------------------------------------
         public void GenerarSumar(int cantidadTerminos, int cantidadSumar)
         {
             if (cantidadTerminos <= 0 || cantidadSumar <= 0)
