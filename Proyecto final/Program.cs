@@ -32,20 +32,30 @@
             /*Cadenas a = new Cadenas();
             a.ejercicio1("hola buenas tardes");*/
 
-            
+            /*Cadenas b = new Cadenas();
+            b.ejercicio2("Buenas tardes");*/
 
+            /*Cadenas c = new Cadenas();
+            c.ejercicio4("Esta es una prueba mas");*/
 
-
-            Cadenas b = new Cadenas();
-            b.ejercicio2("Esta es una prueba mas");
-
-            Cadenas c = new Cadenas();
-            c.ejercicio3("Esta es una prueba mas");
-
-
+            /*Cadenas e = new Cadenas();
+            e.ejercicio5("Esta es una prueba mas");*/
 
         //----------------------------------------------d) Vectores------------------------------------------------------------------
+            /*Vectores a = new Vectores();
+            a.ejercicio1(2, 4, 5, 12, 23, 54, 3, 34, 6);*/
 
+            /*Vectores b = new Vectores();
+            b.ejercicio2(2, 4, 5, 12, 23, 54, 3, 34, 6);*/
+
+            /*Vectores c = new Vectores();
+            c.ejercicio3(2, 4, 5, 12, 23, 54, 3, 34, 6);*/
+
+            /*Vectores d = new Vectores();
+            d.ejercicio4(2, 5, 65, 23, 45, 2, 13, 45, 61);*/
+
+            Vectores e = new Vectores();
+            e.ejercicio5(2, 5, 65, 23, 45, 2, 13, 45);
         }
     }
 }
